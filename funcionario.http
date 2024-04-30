@@ -1,0 +1,37 @@
+
+### Cadastrar
+POST http://localhost:5054/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Alice",
+    "cpf" : "123",
+}
+
+### Listar
+GET http://localhost:5054/api/funcionario/listar
+
+POST http://localhost:5054/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "valor" : 50,
+    "quantidade" : 1000,
+    "mes" : 10,
+    "ano" : 2023,
+    "funcionarioId" : 1,
+    "salarioBruto" : 1000,
+}
+
+### Buscar
+GET http://localhost:5054/api/funcionario/buscar/5e1f00ff-02b6-40d7-9665-12f4aa644a35b2
+
+### Alterar
+PUT http://localhost:5054/api/funcionario/alterar/3e1926a3-dbf6-44a4-a0e6-33ca7c1952cc
+{
+    "nome" : "Jose",
+    "cpf"  : "456",
+}
+
+### Deletar
+DELETE http://localhost:5054/api/funcionario/deletar/93a30b58-9f9d-42a6-8ea4-f3ddb5a7cd5c
